@@ -2,11 +2,11 @@
 
 ## Contacts
 - **Email**: nikakantina@gmail.com
-- **Telegram**: +375 29 119 15 38
+- **Telegram**: @NikaKantina
 - **GitHub**: NikaKantina
 
 ## Current goals
-I've made a decision to change my career path, and right now I'm exploring which areas of self-development interest me the most. I consider taking this course as a great opportunity to learn about front-end development.
+I've decided to change my career path, and right now I'm exploring which areas of self-development interest me the most. I consider taking this course as a great opportunity to learn about front-end development.
 
 ## Skills
 - **Python** (basic)
