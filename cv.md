@@ -1,8 +1,8 @@
 # Veronika Kantina
 
 ## Contacts
-- **email**: nikakantina@gmail.com
-- **telegram**: +375 29 119 15 38
+- **Email**: nikakantina@gmail.com
+- **Telegram**: +375 29 119 15 38
 - **GitHub**: NikaKantina
 
 ## Current goals
