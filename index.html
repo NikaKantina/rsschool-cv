@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>HTML/CSS Task #2</h1>
+    <div class="upper-content">
+        <header class="cv-header">
+            <nav class="cv-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                    <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="cv-main">
+            <div class="left-pane">
+                <div class="personal-info">
+                    <div class="profile-picture-container">
+                        <img class="profile-picture" src="./pp.jpg" alt="Veronika's profile picture">
+                    </div>
+                    <h1>Veronika Kantina</h1>
+                </div>
+
+                <div id="contacts" class="contacts info-section">
+                    <ul>
+                        <li>Email: <a href="mailto:nikakantina@gmail.com">nikakantina@gmail.com</a></li>
+                        <li>Discord: Nika Kantina</li>
+                    </ul>
+                </div>
+
+                <section id="skills" class="skills info-section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS - basic</li>
+                        <li>Python - basic</li>
+                    </ul>
+                </section>
+
+                <section id="languages" class="languages info-section">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Russian - native</li>
+                        <li>English - upper-intermediate (B2)</li>
+                        <li>Belarusian - intermediate</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="right-pane">
+                <section id="profile" class="profile info-section">
+                    <h2>Profile</h2>
+                    <p>I've decided to change my career path, and right now I'm exploring which areas of
+                        self-development interest me the most. I consider taking this course as a great opportunity to
+                        learn about front-end development. I worked as a project administration specialist for six years, 
+                        where I was responsible for organizing and coordinating working group meetings and monitoring 
+                        the implementation of decisions and instructions.</p>
+                </section>
+
+                <section id="education" class="education info-section">
+                    <h2>Education</h2>
+                    <h3>Bachelor Degree</h3>
+                    <h4>Belarusian state university of informatics and radioelectronics</h4>
+                    <p>Digital Marketing Specialization</p>
+
+                </section>
+
+                <section id="code" class="code-section info-section">
+                    <h2>Code example</h2>
+                    <pre>
+                        <code>
+def open_file(filename):
+    with open(filename, 'r') as f:
+        read_flowers = f.readlines()
+        flower_keys = []
+        flower_values = []
+
+        for line in read_flowers:
+            flower_keys.append(line.split(':')[0]) 
+            flower_values.append(line.split(':')[1].strip())
+    
+        flowers_dict = dict(zip(flower_keys, flower_values))
+        return flowers_dict
+full_dict = open_file('flowers.txt')
+print(type(full_dict))
+def main_func():
+    input_name = input('Enter your First name only: ')
+    first_letter = input_name[0][:1].capitalize() 
+    
+    flower_value = full_dict[first_letter]
+    print("\nUnique flower name with the first letter: ", 
+    flower_value)
+    
+main_func()
+                            </code>
+                    </pre>
+
+                </section>
+
+                <section id="projects" class="projects info-section">
+                    <h2>Projects</h2>
+                    <p><a href="https://github.com/NikaKantina/rsschool-cv">
+                        Here's a link to my RSSCHOOL-CV PROJECT
+                    </a></p>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer class="cv-footer">
+        <div class="footer-item footer-github">
+            <a href="https://github.com/NikaKantina">
+                <img class="footer-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png"
+                    alt="github logo">
+            </a>
+        </div>
+
+        <div class="footer-item footer-rs-logo">
+            <a href="https://rs.school/courses/javascript-ru">
+                <img class="footer-image"
+                    src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/61cea2636c5a5f660b1070fa262bbd4acc92ec66/tasks/cv/rs-school-logo.svg"
+                    alt="rs school logo">
+            </a>
+        </div>
+
+        <div class="footer-item footer-year">
+            <h4>2024</h4>
+        </div>
+    </footer>
 </body>
+
 </html>
